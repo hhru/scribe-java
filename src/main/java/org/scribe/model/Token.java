@@ -15,8 +15,9 @@ public class Token implements Serializable
   private final String token;
   private final String secret;
   private final String rawResponse;
+  private String idToken;
 
-  /**
+    /**
    * Default constructor
    *
    * @param token token value. Can't be null.
@@ -46,6 +47,20 @@ public class Token implements Serializable
   {
     return secret;
   }
+
+    public void setIdToken(String idToken) {
+        this.idToken = idToken;
+    }
+
+    /**
+     * Id_token is part of OpenID Connect specification. It can hold user information that you can directly
+     * extract without additional request to provider.
+     * See http://openid.net/specs/openid-connect-core-1_0.html#id_token-tokenExample and https://bitbucket.org/nimbusds/nimbus-jose-jwt/wiki/Home
+     * @return encoded and signed id token in JWT format or null, if not defined.
+     */
+    public String getIdToken() {
+        return idToken;
+    }
 
   public String getRawResponse()
   {

@@ -20,6 +20,7 @@ public class ServiceBuilder {
   private String callback;
   private Api api;
   private String scope;
+  private String state;
   private String grantType;
   private SignatureType signatureType;
   private OutputStream debugStream;
@@ -121,10 +122,22 @@ public class ServiceBuilder {
     return this;
   }
 
+    /**
+     * Configures the anti forgery session state. This is available in some APIs (like Google's).
+     *
+     * @param state The OAuth state
+     * @return the {@link ServiceBuilder} instance for method chaining
+     */
+    public ServiceBuilder state(String state) {
+        Preconditions.checkEmptyString(scope, "Invalid OAuth state");
+        this.state = state;
+        return this;
+    }
+
   /**
    * Configures the signature type, choose between header, querystring, etc. Defaults to Header
    *
-   * @param  scope  The OAuth scope
+   * @param  type  signature type
    *
    * @return  the {@link ServiceBuilder} instance for method chaining
    */
@@ -172,6 +185,8 @@ public class ServiceBuilder {
     Preconditions.checkNotNull(api, "You must specify a valid api through the provider() method");
     Preconditions.checkEmptyString(apiKey, "You must provide an api key");
     Preconditions.checkEmptyString(apiSecret, "You must provide an api secret");
-    return api.createService(new OAuthConfig(apiKey, apiSecret, callback, signatureType, scope, debugStream, connectTimeout, readTimeout, grantType));
+    OAuthConfig config = new OAuthConfig(apiKey, apiSecret, callback, signatureType, scope, debugStream, connectTimeout, readTimeout, grantType);
+    config.setState(state);
+    return api.createService(config);
   }
 }

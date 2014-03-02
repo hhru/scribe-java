@@ -1,5 +1,6 @@
 package org.scribe.examples;
 
+import java.util.Random;
 import java.util.Scanner;
 import org.scribe.builder.ServiceBuilder;
 import org.scribe.builder.api.GoogleApi20;
@@ -12,17 +13,23 @@ import org.scribe.oauth.OAuth20ServiceImpl;
 
 public class Google20Example {
   private static final String NETWORK_NAME = "G+";
-  private static final String PROTECTED_RESOURCE_URL = "https://www.googleapis.com/plus/v1/people/me";
-  private static final String STATE_PARAM_NAME = "state";
+  private static final String PROTECTED_RESOURCE_URL = "https://www.googleapis.com/plus/v1/people/%s";
   private static final Token EMPTY_TOKEN = null;
 
   public static void main(String[] args) {
     // Replace these with your own api key and secret
     final String clientId = "api key";
     final String apiSecret = "api secret";
-    final OAuth20ServiceImpl service =
-      (OAuth20ServiceImpl) new ServiceBuilder().provider(GoogleApi20.class).apiKey(clientId).apiSecret(apiSecret).scope("profile") // replace with desired scope
-      .grantType("authorization_code").callback("http://example.com/callback").build();
+    String secretState = "secret" + new Random(System.currentTimeMillis()).nextInt(999999);
+    final OAuth20ServiceImpl service = (OAuth20ServiceImpl) new ServiceBuilder()
+            .provider(GoogleApi20.class)
+            .apiKey(clientId)
+            .apiSecret(apiSecret)
+            .scope("openid profile") // replace with desired scope
+            .grantType("authorization_code")
+            .state(secretState)
+            .callback("http://example.com/callback")
+            .build();
     Scanner in = new Scanner(System.in);
 
     System.out.println("=== " + NETWORK_NAME + "'s OAuth Workflow ===");
@@ -30,7 +37,7 @@ public class Google20Example {
 
     // Obtain the Authorization URL
     System.out.println("Fetching the Authorization URL...");
-    final String authorizationUrl = service.getAuthorizationUrl(EMPTY_TOKEN) + '&' + STATE_PARAM_NAME + "=some_params";
+    final String authorizationUrl = service.getAuthorizationUrl(EMPTY_TOKEN);
     System.out.println("Got the Authorization URL!");
     System.out.println("Now go and authorize Scribe here:");
     System.out.println(authorizationUrl);
@@ -38,6 +45,16 @@ public class Google20Example {
     System.out.print(">>");
     Verifier verifier = new Verifier(in.nextLine());
     System.out.println();
+
+      System.out.println("And paste the state from server here");
+      System.out.print(">>");
+      String value = in.nextLine();
+      if (!secretState.equals(value)) {
+          System.out.println("Ooops, state value does not match!");
+          System.out.println("Expected = " + secretState);
+          System.out.println("Got      = " + value);
+          System.out.println();
+      }
 
     // Trade the Request Token and Verfier for the Access Token
     System.out.println("Trading the Request Token for an Access Token...");
@@ -49,7 +66,7 @@ public class Google20Example {
     // Now let's go and ask for a protected resource!
     System.out.println("Now we're going to access a protected resource...");
     while (true) {
-      System.out.println("Paste profile query for fetch");
+      System.out.println("Paste profile query for fetch, for example 'me' for your account");
       System.out.print(">>");
       final String query = in.nextLine();
       System.out.println();
