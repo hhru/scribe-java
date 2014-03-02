@@ -17,6 +17,7 @@ public class OAuthConfig {
   private final OutputStream debugStream;
   private final Integer connectTimeout;
   private final Integer readTimeout;
+  private String state;
 
   public OAuthConfig(String key, String secret) {
     this(key, secret, null, null, null, null, null, null, null);
@@ -86,4 +87,20 @@ public class OAuthConfig {
       }
     }
   }
+
+    public String getState() {
+        return state;
+    }
+
+    /**
+     * Optional value used by some provider implementations that is exchanged with provider to avoid CSRF attacks.
+     * @param state some secret key that client side shall never receive
+     */
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public boolean hasState() {
+      return state != null;
+    }
 }
