@@ -1,7 +1,7 @@
 package org.scribe.model;
 
-import java.io.*;
-import org.scribe.utils.*;
+import java.io.Serializable;
+import org.scribe.utils.Preconditions;
 
 /**
  * Represents an OAuth token (either request or access token) and its secret
