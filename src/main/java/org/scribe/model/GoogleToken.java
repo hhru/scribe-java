@@ -1,6 +1,4 @@
-package ru.hh.oauth.subscribe.api.google;
-
-import org.scribe.model.Token;
+package org.scribe.model;
 
 public class GoogleToken extends Token {
 
