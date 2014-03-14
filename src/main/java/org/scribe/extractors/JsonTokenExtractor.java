@@ -7,21 +7,20 @@ import org.scribe.model.Token;
 import org.scribe.utils.Preconditions;
 
 public class JsonTokenExtractor implements AccessTokenExtractor {
-  private Pattern accessTokenPattern = Pattern.compile("\"access_token\"\\s*:\\s*\"(\\S*?)\"");
-  private Pattern idTokenPattern = Pattern.compile("\"id_token\"\\s*:\\s*\"(\\S*?)\"");
+    private static final Pattern ACCESS_TOKEN_PATTERN = Pattern.compile("\"access_token\"\\s*:\\s*\"(\\S*?)\"");
 
-  public Token extract(String response) {
-      Preconditions.checkEmptyString(response, "Cannot extract a token from a null or empty String");
-      Matcher matcher = accessTokenPattern.matcher(response);
-      if (!matcher.find()) {
-          throw new OAuthException("Cannot extract an access token. Response was: " + response);
-      }
+    @Override
+    public Token extract(final String response) {
+        return new Token(extractAccessToken(response), "", response);
+    }
 
-      Token token = new Token(matcher.group(1), "", response);
-      matcher = idTokenPattern.matcher(response);
-      if (matcher.find()) {
-          token.setIdToken(matcher.group(1));
-      }
-      return token;
-  }
+    protected String extractAccessToken(final String response) {
+        Preconditions.checkEmptyString(response, "Cannot extract a token from a null or empty String");
+        final Matcher matcher = ACCESS_TOKEN_PATTERN.matcher(response);
+        if (matcher.find()) {
+            return matcher.group(1);
+        } else {
+            throw new OAuthException("Cannot extract an acces token. Response was: " + response);
+        }
+    }
 }
