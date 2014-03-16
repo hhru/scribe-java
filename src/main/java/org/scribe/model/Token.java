@@ -8,106 +8,85 @@ import org.scribe.utils.Preconditions;
  *
  * @author Pablo Fernandez
  */
-public class Token implements Serializable
-{
-  private static final long serialVersionUID = 715000866082812683L;
+public class Token implements Serializable {
 
-  private final String token;
-  private final String secret;
-  private final String rawResponse;
-  private String idToken;
+    private static final long serialVersionUID = 715000866082812683L;
 
-    /**
-   * Default constructor
-   *
-   * @param token token value. Can't be null.
-   * @param secret token secret. Can't be null.
-   */
-  public Token(String token, String secret)
-  {
-    this(token, secret, null);
-  }
-
-  public Token(String token, String secret, String rawResponse)
-  {
-    Preconditions.checkNotNull(token, "Token can't be null");
-    Preconditions.checkNotNull(secret, "Secret can't be null");
-
-    this.token = token;
-    this.secret = secret;
-    this.rawResponse = rawResponse;
-  }
-
-  public String getToken()
-  {
-    return token;
-  }
-
-  public String getSecret()
-  {
-    return secret;
-  }
-
-    public void setIdToken(String idToken) {
-        this.idToken = idToken;
-    }
+    private final String token;
+    private final String secret;
+    private final String rawResponse;
 
     /**
-     * Id_token is part of OpenID Connect specification. It can hold user information that you can directly
-     * extract without additional request to provider.
-     * See http://openid.net/specs/openid-connect-core-1_0.html#id_token-tokenExample and https://bitbucket.org/nimbusds/nimbus-jose-jwt/wiki/Home
-     * @return encoded and signed id token in JWT format or null, if not defined.
+     * Default constructor
+     *
+     * @param token token value. Can't be null.
+     * @param secret token secret. Can't be null.
      */
-    public String getIdToken() {
-        return idToken;
+    public Token(String token, String secret) {
+        this(token, secret, null);
     }
 
-  public String getRawResponse()
-  {
-    if (rawResponse == null)
-    {
-      throw new IllegalStateException("This token object was not constructed by scribe and does not have a rawResponse");
+    public Token(String token, String secret, String rawResponse) {
+        Preconditions.checkNotNull(token, "Token can't be null");
+        Preconditions.checkNotNull(secret, "Secret can't be null");
+
+        this.token = token;
+        this.secret = secret;
+        this.rawResponse = rawResponse;
     }
-    return rawResponse;
-  }
 
-  @Override
-  public String toString()
-  {
-    return String.format("Token[%s , %s]", token, secret);
-  }
+    public String getToken() {
+        return token;
+    }
 
-  /**
-   * Returns true if the token is empty (token = "", secret = "")
-   */
-  public boolean isEmpty()
-  {
-    return "".equals(this.token) && "".equals(this.secret);
-  }
+    public String getSecret() {
+        return secret;
+    }
 
-  /**
-   * Factory method that returns an empty token (token = "", secret = "").
-   *
-   * Useful for two legged OAuth.
-   */
-  public static Token empty()
-  {
-    return new Token("", "");
-  }
+    public String getRawResponse() {
+        if (rawResponse == null) {
+            throw new IllegalStateException(
+                    "This token object was not constructed by SubScribe and does not have a rawResponse");
+        }
+        return rawResponse;
+    }
 
-  @Override
-  public boolean equals(Object o)
-  {
-    if (this == o) return true;
-    if (o == null || getClass() != o.getClass()) return false;
+    @Override
+    public String toString() {
+        return String.format("Token[%s , %s]", token, secret);
+    }
 
-    Token that = (Token) o;
-    return token.equals(that.token) && secret.equals(that.secret);
-  }
+    /**
+     * Returns true if the token is empty (token = "", secret = "")
+     */
+    public boolean isEmpty() {
+        return "".equals(this.token) && "".equals(this.secret);
+    }
 
-  @Override
-  public int hashCode()
-  {
-    return 31 * token.hashCode() + secret.hashCode();
-  }
+    /**
+     * Factory method that returns an empty token (token = "", secret = "").
+     *
+     * Useful for two legged OAuth.
+     */
+    public static Token empty() {
+        return new Token("", "");
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+
+        Token that = (Token) o;
+        return token.equals(that.token) && secret.equals(that.secret);
+    }
+
+    @Override
+    public int hashCode() {
+        return 31 * token.hashCode() + secret.hashCode();
+    }
 }

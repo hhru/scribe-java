@@ -7,6 +7,7 @@ import org.scribe.model.Token;
 import org.scribe.utils.Preconditions;
 
 public class JsonTokenExtractor implements AccessTokenExtractor {
+
     private static final Pattern ACCESS_TOKEN_PATTERN = Pattern.compile("\"access_token\"\\s*:\\s*\"(\\S*?)\"");
 
     @Override
