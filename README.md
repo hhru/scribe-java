@@ -1,5 +1,5 @@
 # Welcome to the home of SubScribe, the complete OAuth Java lib!
-originaly forked from Scribe (https://github.com/fernandezpablo85/scribe-java)
+Originally forked from Scribe (https://github.com/fernandezpablo85/scribe-java)
 
 ## Main reasons of fork here:
 1. https://github.com/fernandezpablo85/scribe-java/wiki/Scribe-scope-revised
@@ -23,6 +23,7 @@ You can pull scribe from my maven repository, just add these to your __pom.xml__
 <dependency>
   <groupId>ru.hh.oauth.subscribe</groupId>
   <artifactId>subscribe</artifactId>
+  <version>2.0</version>
 </dependency>
 ```
 
