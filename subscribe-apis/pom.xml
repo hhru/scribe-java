@@ -38,7 +38,7 @@
     <dependencies>
         <dependency>
             <groupId>ru.hh.oauth.subscribe</groupId>
-            <artifactId>core</artifactId>
+            <artifactId>subscribe-core</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>
