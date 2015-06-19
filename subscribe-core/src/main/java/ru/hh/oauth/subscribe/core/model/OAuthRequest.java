@@ -36,7 +36,7 @@ public class OAuthRequest extends AbstractRequest {
             createConnection();
             return doSend();
         } catch (IOException | RuntimeException e) {
-            throw new OAuthConnectionException(e);
+            throw new OAuthConnectionException(getCompleteUrl(), e);
         }
     }
 

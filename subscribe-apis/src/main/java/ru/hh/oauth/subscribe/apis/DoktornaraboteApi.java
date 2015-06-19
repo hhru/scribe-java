@@ -32,12 +32,12 @@ public class DoktornaraboteApi extends DefaultApi20 {
             config.getCallback(),
             "Must provide a valid url as callback. Doktornarabote does not support OOB");
         final StringBuilder sb = new StringBuilder(
-      	    String.format(
-       	        AUTHORIZE_URL, 
-      	        config.getApiKey(), 
-      	  	    OAuthEncoder.encode(config.getCallback()), 
-      		      OAuthEncoder.encode(config.getScope())
-      	    )
+            String.format(
+                AUTHORIZE_URL,
+                config.getApiKey(),
+                OAuthEncoder.encode(config.getCallback()),
+                OAuthEncoder.encode(config.getScope())
+            )
         );
 
         final String state = config.getState();
