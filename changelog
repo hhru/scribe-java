@@ -1,4 +1,5 @@
 [SNAPSHOT]
+ * prepare to merge back to the ScribeJava
  * backport 'news' from scribejava
 
 [3.4]

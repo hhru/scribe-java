@@ -9,12 +9,12 @@ import com.github.scribejava.core.model.ForceTypeOfHttpRequest;
 import com.github.scribejava.core.model.OAuthAsyncRequestCallback;
 import com.github.scribejava.core.model.OAuthConfig;
 import com.github.scribejava.core.model.OAuthConfigAsync;
-import com.github.scribejava.core.model.SubScribeConfig;
+import com.github.scribejava.core.model.ScribeJavaConfig;
 import com.github.scribejava.core.model.Token;
 import com.github.scribejava.core.model.Verifier;
 
 /**
- * The main SubScribe object.
+ * The main ScribeJava object.
  *
  * A facade responsible for the retrieval of request and access tokens and for the signing of HTTP requests.
  *
@@ -27,7 +27,7 @@ public abstract class OAuthService {
 
     public OAuthService(final OAuthConfig config) {
         this.config = config;
-        final ForceTypeOfHttpRequest forceTypeOfHttpRequest = SubScribeConfig.getForceTypeOfHttpRequests();
+        final ForceTypeOfHttpRequest forceTypeOfHttpRequest = ScribeJavaConfig.getForceTypeOfHttpRequests();
         if (config instanceof OAuthConfigAsync) {
             if (ForceTypeOfHttpRequest.FORCE_SYNC_ONLY_HTTP_REQUESTS == forceTypeOfHttpRequest) {
                 throw new OAuthException("Cannot use async operations, only sync");

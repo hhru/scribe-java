@@ -36,7 +36,7 @@ public class MailruExample {
         System.out.println("Fetching the Authorization URL...");
         final String authorizationUrl = service.getAuthorizationUrl(EMPTY_TOKEN);
         System.out.println("Got the Authorization URL!");
-        System.out.println("Now go and authorize SubScribe here:");
+        System.out.println("Now go and authorize ScribeJava here:");
         System.out.println(authorizationUrl);
         System.out.println("And paste the authorization code here");
         System.out.print(">>");
@@ -60,6 +60,6 @@ public class MailruExample {
         System.out.println(response.getBody());
 
         System.out.println();
-        System.out.println("Thats it man! Go and build something awesome with SubScribe! :)");
+        System.out.println("Thats it man! Go and build something awesome with ScribeJava! :)");
     }
 }

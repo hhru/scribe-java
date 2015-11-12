@@ -30,7 +30,7 @@ public class TwitterExample {
         System.out.println("Got the Request Token!");
         System.out.println();
 
-        System.out.println("Now go and authorize SubScribe here:");
+        System.out.println("Now go and authorize ScribeJava here:");
         System.out.println(service.getAuthorizationUrl(requestToken));
         System.out.println("And paste the verifier here");
         System.out.print(">>");
@@ -54,6 +54,6 @@ public class TwitterExample {
         System.out.println(response.getBody());
 
         System.out.println();
-        System.out.println("That's it man! Go and build something awesome with SubScribe! :)");
+        System.out.println("That's it man! Go and build something awesome with ScribeJava! :)");
     }
 }

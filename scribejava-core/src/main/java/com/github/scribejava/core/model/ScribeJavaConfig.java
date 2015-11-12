@@ -1,6 +1,6 @@
 package com.github.scribejava.core.model;
 
-public abstract class SubScribeConfig {
+public abstract class ScribeJavaConfig {
 
     private static ForceTypeOfHttpRequest forceTypeOfHttpRequests = ForceTypeOfHttpRequest.NONE;
 
@@ -9,6 +9,6 @@ public abstract class SubScribeConfig {
     }
 
     public static void setForceTypeOfHttpRequests(ForceTypeOfHttpRequest forceTypeOfHttpRequests) {
-        SubScribeConfig.forceTypeOfHttpRequests = forceTypeOfHttpRequests;
+        ScribeJavaConfig.forceTypeOfHttpRequests = forceTypeOfHttpRequests;
     }
 }

@@ -46,7 +46,7 @@ public class Token implements Serializable {
     public String getRawResponse() {
         if (rawResponse == null) {
             throw new IllegalStateException(
-                    "This token object was not constructed by SubScribe and does not have a rawResponse");
+                    "This token object was not constructed by ScribeJava and does not have a rawResponse");
         }
         return rawResponse;
     }

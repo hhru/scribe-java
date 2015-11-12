@@ -3,15 +3,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>ru.hh.oauth.subscribe</groupId>
-        <artifactId>subscribe</artifactId>
-        <version>3.5-SNAPSHOT</version>
+        <groupId>com.github.scribejava</groupId>
+        <artifactId>scribejava</artifactId>
+        <version>2.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     
-    <groupId>ru.hh.oauth.subscribe</groupId>
-    <artifactId>subscribe-apis</artifactId>
-    <name>SubScribe APIs</name>
+    <groupId>com.github.scribejava</groupId>
+    <artifactId>scribejava-apis</artifactId>
+    <name>ScribeJava APIs</name>
     <packaging>jar</packaging>
 
     <build>
@@ -37,8 +37,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>ru.hh.oauth.subscribe</groupId>
-            <artifactId>subscribe-core</artifactId>
+            <groupId>com.github.scribejava</groupId>
+            <artifactId>scribejava-core</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>

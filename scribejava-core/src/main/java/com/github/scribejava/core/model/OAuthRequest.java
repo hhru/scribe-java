@@ -24,7 +24,7 @@ public class OAuthRequest extends AbstractRequest {
      * @throws RuntimeException if the connection cannot be created.
      */
     public Response send() {
-        final ForceTypeOfHttpRequest forceTypeOfHttpRequest = SubScribeConfig.getForceTypeOfHttpRequests();
+        final ForceTypeOfHttpRequest forceTypeOfHttpRequest = ScribeJavaConfig.getForceTypeOfHttpRequests();
 
         if (ForceTypeOfHttpRequest.FORCE_ASYNC_ONLY_HTTP_REQUESTS == forceTypeOfHttpRequest) {
             throw new OAuthException("Cannot use sync operations, only async");

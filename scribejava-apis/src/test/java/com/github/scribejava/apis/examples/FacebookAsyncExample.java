@@ -9,7 +9,7 @@ import com.github.scribejava.core.builder.ServiceBuilderAsync;
 import com.github.scribejava.core.model.ForceTypeOfHttpRequest;
 import com.github.scribejava.core.model.OAuthRequestAsync;
 import com.github.scribejava.core.model.Response;
-import com.github.scribejava.core.model.SubScribeConfig;
+import com.github.scribejava.core.model.ScribeJavaConfig;
 import com.github.scribejava.core.model.Token;
 import com.github.scribejava.core.model.Verb;
 import com.github.scribejava.core.model.Verifier;
@@ -26,7 +26,7 @@ public abstract class FacebookAsyncExample {
         final String clientId = "your client id";
         final String clientSecret = "your client secret";
         final String secretState = "secret" + new Random().nextInt(999_999);
-        SubScribeConfig.setForceTypeOfHttpRequests(ForceTypeOfHttpRequest.FORCE_ASYNC_ONLY_HTTP_REQUESTS);
+        ScribeJavaConfig.setForceTypeOfHttpRequests(ForceTypeOfHttpRequest.FORCE_ASYNC_ONLY_HTTP_REQUESTS);
         final AsyncHttpClientConfig clientConfig = new AsyncHttpClientConfig.Builder()
                 .setMaxConnections(5)
                 .setRequestTimeout(10000)
@@ -53,7 +53,7 @@ public abstract class FacebookAsyncExample {
         System.out.println("Fetching the Authorization URL...");
         final String authorizationUrl = service.getAuthorizationUrl(EMPTY_TOKEN);
         System.out.println("Got the Authorization URL!");
-        System.out.println("Now go and authorize SubScribe here:");
+        System.out.println("Now go and authorize ScribeJava here:");
         System.out.println(authorizationUrl);
         System.out.println("And paste the authorization code here");
         System.out.print(">>");
@@ -90,7 +90,7 @@ public abstract class FacebookAsyncExample {
         System.out.println(response.getBody());
 
         System.out.println();
-        System.out.println("Thats it man! Go and build something awesome with SubScribe! :)");
+        System.out.println("Thats it man! Go and build something awesome with ScribeJava! :)");
         service.closeAsyncClient();
     }
 }

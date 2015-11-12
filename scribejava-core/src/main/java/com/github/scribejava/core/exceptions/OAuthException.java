@@ -1,7 +1,8 @@
 package com.github.scribejava.core.exceptions;
 
 /**
- * Default SubScribe exception. Represents a problem in the OAuth signing process
+ * Default ScribeJava exception. Represents a problem in the OAuth signing
+ * process
  *
  * @author Pablo Fernandez
  */
