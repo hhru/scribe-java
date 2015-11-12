@@ -51,6 +51,20 @@ public class Token implements Serializable {
         return rawResponse;
     }
 
+    public String getParameter(String parameter) {
+        String value = null;
+        for (String str : this.getRawResponse().split("&")) {
+            if (str.startsWith(parameter + '=')) {
+                String[] part = str.split("=");
+                if (part.length > 1) {
+                    value = part[1].trim();
+                }
+                break;
+            }
+        }
+        return value;
+    }
+
     @Override
     public String toString() {
         return String.format("Token[%s , %s]", token, secret);

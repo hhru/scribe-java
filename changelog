@@ -1,3 +1,6 @@
+[SNAPSHOT]
+ * backport 'news' from scribejava
+
 [3.4]
  * add doktornarabote.ru API support
 
