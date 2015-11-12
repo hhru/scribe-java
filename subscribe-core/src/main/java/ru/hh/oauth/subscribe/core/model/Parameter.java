@@ -1,6 +1,6 @@
-package ru.hh.oauth.subscribe.core.model;
+package com.github.scribejava.core.model;
 
-import ru.hh.oauth.subscribe.core.utils.OAuthEncoder;
+import com.github.scribejava.core.utils.OAuthEncoder;
 
 /**
  * @author Pablo Fernandez

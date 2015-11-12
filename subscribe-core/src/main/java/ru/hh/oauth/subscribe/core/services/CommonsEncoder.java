@@ -1,8 +1,8 @@
-package ru.hh.oauth.subscribe.core.services;
+package com.github.scribejava.core.services;
 
 import java.io.UnsupportedEncodingException;
 import org.apache.commons.codec.binary.Base64;
-import ru.hh.oauth.subscribe.core.exceptions.OAuthSignatureException;
+import com.github.scribejava.core.exceptions.OAuthSignatureException;
 
 public class CommonsEncoder extends Base64Encoder {
 

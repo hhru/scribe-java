@@ -1,17 +1,17 @@
-package ru.hh.oauth.subscribe.core.oauth;
+package com.github.scribejava.core.oauth;
 
 import com.ning.http.client.AsyncHttpClient;
 import com.ning.http.client.ProxyServer;
 import java.util.concurrent.Future;
-import ru.hh.oauth.subscribe.core.exceptions.OAuthException;
-import ru.hh.oauth.subscribe.core.model.AbstractRequest;
-import ru.hh.oauth.subscribe.core.model.ForceTypeOfHttpRequest;
-import ru.hh.oauth.subscribe.core.model.OAuthAsyncRequestCallback;
-import ru.hh.oauth.subscribe.core.model.OAuthConfig;
-import ru.hh.oauth.subscribe.core.model.OAuthConfigAsync;
-import ru.hh.oauth.subscribe.core.model.SubScribeConfig;
-import ru.hh.oauth.subscribe.core.model.Token;
-import ru.hh.oauth.subscribe.core.model.Verifier;
+import com.github.scribejava.core.exceptions.OAuthException;
+import com.github.scribejava.core.model.AbstractRequest;
+import com.github.scribejava.core.model.ForceTypeOfHttpRequest;
+import com.github.scribejava.core.model.OAuthAsyncRequestCallback;
+import com.github.scribejava.core.model.OAuthConfig;
+import com.github.scribejava.core.model.OAuthConfigAsync;
+import com.github.scribejava.core.model.SubScribeConfig;
+import com.github.scribejava.core.model.Token;
+import com.github.scribejava.core.model.Verifier;
 
 /**
  * The main SubScribe object.

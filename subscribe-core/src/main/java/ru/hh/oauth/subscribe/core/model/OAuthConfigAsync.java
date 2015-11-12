@@ -1,4 +1,4 @@
-package ru.hh.oauth.subscribe.core.model;
+package com.github.scribejava.core.model;
 
 import com.ning.http.client.AsyncHttpClientConfig;
 import java.io.OutputStream;

@@ -1,4 +1,4 @@
-package ru.hh.oauth.subscribe.core.model;
+package com.github.scribejava.core.model;
 
 public interface OAuthAsyncRequestCallback<T> {
 

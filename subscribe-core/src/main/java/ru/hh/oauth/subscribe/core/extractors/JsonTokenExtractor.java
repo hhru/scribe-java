@@ -1,10 +1,10 @@
-package ru.hh.oauth.subscribe.core.extractors;
+package com.github.scribejava.core.extractors;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import ru.hh.oauth.subscribe.core.exceptions.OAuthException;
-import ru.hh.oauth.subscribe.core.model.Token;
-import ru.hh.oauth.subscribe.core.utils.Preconditions;
+import com.github.scribejava.core.exceptions.OAuthException;
+import com.github.scribejava.core.model.Token;
+import com.github.scribejava.core.utils.Preconditions;
 
 public class JsonTokenExtractor implements AccessTokenExtractor {
 

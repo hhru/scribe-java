@@ -1,13 +1,13 @@
-package ru.hh.oauth.subscribe.core.services;
+package com.github.scribejava.core.services;
 
 import java.io.UnsupportedEncodingException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
-import ru.hh.oauth.subscribe.core.exceptions.OAuthSignatureException;
-import ru.hh.oauth.subscribe.core.utils.OAuthEncoder;
-import ru.hh.oauth.subscribe.core.utils.Preconditions;
+import com.github.scribejava.core.exceptions.OAuthSignatureException;
+import com.github.scribejava.core.utils.OAuthEncoder;
+import com.github.scribejava.core.utils.Preconditions;
 
 /**
  * HMAC-SHA1 implementation of {@link SignatureService}

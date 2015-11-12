@@ -1,4 +1,4 @@
-package ru.hh.oauth.subscribe.core.exceptions;
+package com.github.scribejava.core.exceptions;
 
 /**
  * Specialized exception that represents a problem in the signature

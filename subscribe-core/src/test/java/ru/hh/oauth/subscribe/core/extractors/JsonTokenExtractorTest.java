@@ -1,8 +1,8 @@
-package ru.hh.oauth.subscribe.core.extractors;
+package com.github.scribejava.core.extractors;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
-import ru.hh.oauth.subscribe.core.model.Token;
+import com.github.scribejava.core.model.Token;
 
 public class JsonTokenExtractorTest {
 

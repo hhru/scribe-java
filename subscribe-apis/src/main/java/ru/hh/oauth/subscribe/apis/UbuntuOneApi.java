@@ -1,9 +1,9 @@
-package ru.hh.oauth.subscribe.apis;
+package com.github.scribejava.apis;
 
-import ru.hh.oauth.subscribe.core.builder.api.DefaultApi10a;
-import ru.hh.oauth.subscribe.core.model.Token;
-import ru.hh.oauth.subscribe.core.services.PlaintextSignatureService;
-import ru.hh.oauth.subscribe.core.services.SignatureService;
+import com.github.scribejava.core.builder.api.DefaultApi10a;
+import com.github.scribejava.core.model.Token;
+import com.github.scribejava.core.services.PlaintextSignatureService;
+import com.github.scribejava.core.services.SignatureService;
 
 /**
  * @author Julio Gutierrez

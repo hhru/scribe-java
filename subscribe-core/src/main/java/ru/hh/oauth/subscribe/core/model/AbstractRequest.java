@@ -1,4 +1,4 @@
-package ru.hh.oauth.subscribe.core.model;
+package com.github.scribejava.core.model;
 
 import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
@@ -6,8 +6,8 @@ import java.net.URL;
 import java.nio.charset.Charset;
 import java.util.HashMap;
 import java.util.Map;
-import ru.hh.oauth.subscribe.core.exceptions.OAuthException;
-import ru.hh.oauth.subscribe.core.oauth.OAuthService;
+import com.github.scribejava.core.exceptions.OAuthException;
+import com.github.scribejava.core.oauth.OAuthService;
 
 /**
  * The representation of an OAuth HttpRequest.

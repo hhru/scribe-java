@@ -1,19 +1,19 @@
-package ru.hh.oauth.subscribe.apis.examples;
+package com.github.scribejava.apis.examples;
 
 import com.ning.http.client.AsyncHttpClientConfig;
 import java.util.Random;
 import java.util.Scanner;
 import java.util.concurrent.ExecutionException;
-import ru.hh.oauth.subscribe.apis.FacebookApi;
-import ru.hh.oauth.subscribe.core.builder.ServiceBuilderAsync;
-import ru.hh.oauth.subscribe.core.model.ForceTypeOfHttpRequest;
-import ru.hh.oauth.subscribe.core.model.OAuthRequestAsync;
-import ru.hh.oauth.subscribe.core.model.Response;
-import ru.hh.oauth.subscribe.core.model.SubScribeConfig;
-import ru.hh.oauth.subscribe.core.model.Token;
-import ru.hh.oauth.subscribe.core.model.Verb;
-import ru.hh.oauth.subscribe.core.model.Verifier;
-import ru.hh.oauth.subscribe.core.oauth.OAuthService;
+import com.github.scribejava.apis.FacebookApi;
+import com.github.scribejava.core.builder.ServiceBuilderAsync;
+import com.github.scribejava.core.model.ForceTypeOfHttpRequest;
+import com.github.scribejava.core.model.OAuthRequestAsync;
+import com.github.scribejava.core.model.Response;
+import com.github.scribejava.core.model.SubScribeConfig;
+import com.github.scribejava.core.model.Token;
+import com.github.scribejava.core.model.Verb;
+import com.github.scribejava.core.model.Verifier;
+import com.github.scribejava.core.oauth.OAuthService;
 
 public abstract class FacebookAsyncExample {
 

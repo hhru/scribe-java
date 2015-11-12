@@ -1,10 +1,10 @@
-package ru.hh.oauth.subscribe.core;
+package com.github.scribejava.core;
 
-import ru.hh.oauth.subscribe.core.model.OAuthConfig;
-import ru.hh.oauth.subscribe.core.model.OAuthConstants;
-import ru.hh.oauth.subscribe.core.model.OAuthRequest;
-import ru.hh.oauth.subscribe.core.model.Verb;
-import ru.hh.oauth.subscribe.core.oauth.OAuth20ServiceImpl;
+import com.github.scribejava.core.model.OAuthConfig;
+import com.github.scribejava.core.model.OAuthConstants;
+import com.github.scribejava.core.model.OAuthRequest;
+import com.github.scribejava.core.model.Verb;
+import com.github.scribejava.core.oauth.OAuth20ServiceImpl;
 
 public class ObjectMother {
 

@@ -1,4 +1,4 @@
-package ru.hh.oauth.subscribe.core.model;
+package com.github.scribejava.core.model;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotSame;

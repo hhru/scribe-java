@@ -1,8 +1,8 @@
-package ru.hh.oauth.subscribe.core.builder;
+package com.github.scribejava.core.builder;
 
-import ru.hh.oauth.subscribe.core.model.OAuthConfig;
-import ru.hh.oauth.subscribe.core.oauth.OAuthService;
-import ru.hh.oauth.subscribe.core.utils.Preconditions;
+import com.github.scribejava.core.model.OAuthConfig;
+import com.github.scribejava.core.oauth.OAuthService;
+import com.github.scribejava.core.utils.Preconditions;
 
 /**
  * Implementation of the Builder pattern, with a fluent interface that creates a {@link OAuthService}

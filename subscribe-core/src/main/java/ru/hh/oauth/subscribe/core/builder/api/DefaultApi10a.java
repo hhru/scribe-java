@@ -1,21 +1,21 @@
-package ru.hh.oauth.subscribe.core.builder.api;
+package com.github.scribejava.core.builder.api;
 
-import ru.hh.oauth.subscribe.core.extractors.AccessTokenExtractor;
-import ru.hh.oauth.subscribe.core.extractors.BaseStringExtractor;
-import ru.hh.oauth.subscribe.core.extractors.BaseStringExtractorImpl;
-import ru.hh.oauth.subscribe.core.extractors.HeaderExtractor;
-import ru.hh.oauth.subscribe.core.extractors.HeaderExtractorImpl;
-import ru.hh.oauth.subscribe.core.extractors.RequestTokenExtractor;
-import ru.hh.oauth.subscribe.core.extractors.TokenExtractorImpl;
-import ru.hh.oauth.subscribe.core.model.OAuthConfig;
-import ru.hh.oauth.subscribe.core.model.Token;
-import ru.hh.oauth.subscribe.core.model.Verb;
-import ru.hh.oauth.subscribe.core.oauth.OAuth10aServiceImpl;
-import ru.hh.oauth.subscribe.core.oauth.OAuthService;
-import ru.hh.oauth.subscribe.core.services.HMACSha1SignatureService;
-import ru.hh.oauth.subscribe.core.services.SignatureService;
-import ru.hh.oauth.subscribe.core.services.TimestampService;
-import ru.hh.oauth.subscribe.core.services.TimestampServiceImpl;
+import com.github.scribejava.core.extractors.AccessTokenExtractor;
+import com.github.scribejava.core.extractors.BaseStringExtractor;
+import com.github.scribejava.core.extractors.BaseStringExtractorImpl;
+import com.github.scribejava.core.extractors.HeaderExtractor;
+import com.github.scribejava.core.extractors.HeaderExtractorImpl;
+import com.github.scribejava.core.extractors.RequestTokenExtractor;
+import com.github.scribejava.core.extractors.TokenExtractorImpl;
+import com.github.scribejava.core.model.OAuthConfig;
+import com.github.scribejava.core.model.Token;
+import com.github.scribejava.core.model.Verb;
+import com.github.scribejava.core.oauth.OAuth10aServiceImpl;
+import com.github.scribejava.core.oauth.OAuthService;
+import com.github.scribejava.core.services.HMACSha1SignatureService;
+import com.github.scribejava.core.services.SignatureService;
+import com.github.scribejava.core.services.TimestampService;
+import com.github.scribejava.core.services.TimestampServiceImpl;
 
 /**
  * Default implementation of the OAuth protocol, version 1.0a

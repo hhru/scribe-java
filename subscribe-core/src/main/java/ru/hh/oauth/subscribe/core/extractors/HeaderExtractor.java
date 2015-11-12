@@ -1,6 +1,6 @@
-package ru.hh.oauth.subscribe.core.extractors;
+package com.github.scribejava.core.extractors;
 
-import ru.hh.oauth.subscribe.core.model.AbstractRequest;
+import com.github.scribejava.core.model.AbstractRequest;
 
 /**
  * Simple command object that generates an OAuth Authorization header to include in the request.

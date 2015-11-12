@@ -1,11 +1,11 @@
-package ru.hh.oauth.subscribe.core.model;
+package com.github.scribejava.core.model;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
-import ru.hh.oauth.subscribe.core.utils.OAuthEncoder;
-import ru.hh.oauth.subscribe.core.utils.Preconditions;
+import com.github.scribejava.core.utils.OAuthEncoder;
+import com.github.scribejava.core.utils.Preconditions;
 
 /**
  * @author Pablo Fernandez

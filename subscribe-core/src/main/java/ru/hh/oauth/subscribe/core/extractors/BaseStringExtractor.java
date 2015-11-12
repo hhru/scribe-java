@@ -1,6 +1,6 @@
-package ru.hh.oauth.subscribe.core.extractors;
+package com.github.scribejava.core.extractors;
 
-import ru.hh.oauth.subscribe.core.model.AbstractRequest;
+import com.github.scribejava.core.model.AbstractRequest;
 
 /**
  * Simple command object that extracts a base string from a {@link ru.hh.oauth.subscribe.core.model.AbstractRequest}

@@ -1,14 +1,14 @@
-package ru.hh.oauth.subscribe.apis.service;
+package com.github.scribejava.apis.service;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import org.apache.commons.codec.CharEncoding;
 import static org.apache.commons.codec.digest.DigestUtils.md5Hex;
-import ru.hh.oauth.subscribe.core.builder.api.DefaultApi20;
-import ru.hh.oauth.subscribe.core.model.AbstractRequest;
-import ru.hh.oauth.subscribe.core.model.OAuthConfig;
-import ru.hh.oauth.subscribe.core.model.Token;
-import ru.hh.oauth.subscribe.core.oauth.OAuth20ServiceImpl;
+import com.github.scribejava.core.builder.api.DefaultApi20;
+import com.github.scribejava.core.model.AbstractRequest;
+import com.github.scribejava.core.model.OAuthConfig;
+import com.github.scribejava.core.model.Token;
+import com.github.scribejava.core.oauth.OAuth20ServiceImpl;
 
 public class OdnoklassnikiServiceImpl extends OAuth20ServiceImpl {
 

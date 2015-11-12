@@ -1,14 +1,14 @@
-package ru.hh.oauth.subscribe.core.extractors;
+package com.github.scribejava.core.extractors;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
-import ru.hh.oauth.subscribe.core.ObjectMother;
-import ru.hh.oauth.subscribe.core.exceptions.OAuthParametersMissingException;
-import ru.hh.oauth.subscribe.core.model.OAuthConfig;
-import ru.hh.oauth.subscribe.core.model.OAuthRequest;
-import ru.hh.oauth.subscribe.core.model.Verb;
-import ru.hh.oauth.subscribe.core.oauth.OAuth20ServiceImpl;
+import com.github.scribejava.core.ObjectMother;
+import com.github.scribejava.core.exceptions.OAuthParametersMissingException;
+import com.github.scribejava.core.model.OAuthConfig;
+import com.github.scribejava.core.model.OAuthRequest;
+import com.github.scribejava.core.model.Verb;
+import com.github.scribejava.core.oauth.OAuth20ServiceImpl;
 
 public class BaseStringExtractorTest {
 

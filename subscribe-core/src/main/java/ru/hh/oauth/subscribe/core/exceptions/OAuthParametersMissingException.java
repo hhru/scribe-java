@@ -1,6 +1,6 @@
-package ru.hh.oauth.subscribe.core.exceptions;
+package com.github.scribejava.core.exceptions;
 
-import ru.hh.oauth.subscribe.core.model.AbstractRequest;
+import com.github.scribejava.core.model.AbstractRequest;
 
 /**
  * Specialized exception that represents a missing OAuth parameter.

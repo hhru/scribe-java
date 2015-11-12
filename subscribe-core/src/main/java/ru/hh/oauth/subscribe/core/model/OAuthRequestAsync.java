@@ -1,4 +1,4 @@
-package ru.hh.oauth.subscribe.core.model;
+package com.github.scribejava.core.model;
 
 import com.ning.http.client.AsyncCompletionHandler;
 import com.ning.http.client.AsyncHttpClient;
@@ -9,8 +9,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Future;
-import ru.hh.oauth.subscribe.core.exceptions.OAuthException;
-import ru.hh.oauth.subscribe.core.oauth.OAuthService;
+import com.github.scribejava.core.exceptions.OAuthException;
+import com.github.scribejava.core.oauth.OAuthService;
 
 public class OAuthRequestAsync extends AbstractRequest {
 

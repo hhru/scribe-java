@@ -1,11 +1,11 @@
-package ru.hh.oauth.subscribe.core.builder.api;
+package com.github.scribejava.core.builder.api;
 
-import ru.hh.oauth.subscribe.core.extractors.AccessTokenExtractor;
-import ru.hh.oauth.subscribe.core.extractors.TokenExtractor20Impl;
-import ru.hh.oauth.subscribe.core.model.OAuthConfig;
-import ru.hh.oauth.subscribe.core.model.Verb;
-import ru.hh.oauth.subscribe.core.oauth.OAuth20ServiceImpl;
-import ru.hh.oauth.subscribe.core.oauth.OAuthService;
+import com.github.scribejava.core.extractors.AccessTokenExtractor;
+import com.github.scribejava.core.extractors.TokenExtractor20Impl;
+import com.github.scribejava.core.model.OAuthConfig;
+import com.github.scribejava.core.model.Verb;
+import com.github.scribejava.core.oauth.OAuth20ServiceImpl;
+import com.github.scribejava.core.oauth.OAuthService;
 
 /**
  * Default implementation of the OAuth protocol, version 2.0 (draft 11)

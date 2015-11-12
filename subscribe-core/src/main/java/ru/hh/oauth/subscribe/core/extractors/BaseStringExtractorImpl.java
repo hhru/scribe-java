@@ -1,10 +1,10 @@
-package ru.hh.oauth.subscribe.core.extractors;
+package com.github.scribejava.core.extractors;
 
-import ru.hh.oauth.subscribe.core.exceptions.OAuthParametersMissingException;
-import ru.hh.oauth.subscribe.core.model.AbstractRequest;
-import ru.hh.oauth.subscribe.core.model.ParameterList;
-import ru.hh.oauth.subscribe.core.utils.OAuthEncoder;
-import ru.hh.oauth.subscribe.core.utils.Preconditions;
+import com.github.scribejava.core.exceptions.OAuthParametersMissingException;
+import com.github.scribejava.core.model.AbstractRequest;
+import com.github.scribejava.core.model.ParameterList;
+import com.github.scribejava.core.utils.OAuthEncoder;
+import com.github.scribejava.core.utils.Preconditions;
 
 /**
  * Default implementation of {@link BaseStringExtractor}. Conforms to OAuth 1.0a

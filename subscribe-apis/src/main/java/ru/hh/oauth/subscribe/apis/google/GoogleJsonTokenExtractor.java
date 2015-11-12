@@ -1,8 +1,8 @@
-package ru.hh.oauth.subscribe.apis.google;
+package com.github.scribejava.apis.google;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import ru.hh.oauth.subscribe.core.extractors.JsonTokenExtractor;
+import com.github.scribejava.core.extractors.JsonTokenExtractor;
 
 /**
  * additionally parses OpenID id_token

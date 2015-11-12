@@ -1,8 +1,8 @@
-package ru.hh.oauth.subscribe.core.services;
+package com.github.scribejava.core.services;
 
-import ru.hh.oauth.subscribe.core.exceptions.OAuthSignatureException;
-import ru.hh.oauth.subscribe.core.utils.OAuthEncoder;
-import ru.hh.oauth.subscribe.core.utils.Preconditions;
+import com.github.scribejava.core.exceptions.OAuthSignatureException;
+import com.github.scribejava.core.utils.OAuthEncoder;
+import com.github.scribejava.core.utils.Preconditions;
 
 /**
  * plaintext implementation of {@link SignatureService}

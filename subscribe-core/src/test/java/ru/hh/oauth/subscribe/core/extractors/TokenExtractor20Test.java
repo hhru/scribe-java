@@ -1,10 +1,10 @@
-package ru.hh.oauth.subscribe.core.extractors;
+package com.github.scribejava.core.extractors;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
-import ru.hh.oauth.subscribe.core.exceptions.OAuthException;
-import ru.hh.oauth.subscribe.core.model.Token;
+import com.github.scribejava.core.exceptions.OAuthException;
+import com.github.scribejava.core.model.Token;
 
 public class TokenExtractor20Test {
 

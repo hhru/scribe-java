@@ -1,4 +1,4 @@
-package ru.hh.oauth.subscribe.core.services;
+package com.github.scribejava.core.services;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Before;

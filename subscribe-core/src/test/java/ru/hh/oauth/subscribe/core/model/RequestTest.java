@@ -1,12 +1,12 @@
-package ru.hh.oauth.subscribe.core.model;
+package com.github.scribejava.core.model;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
-import ru.hh.oauth.subscribe.core.oauth.OAuth20ServiceImpl;
-import ru.hh.oauth.subscribe.core.oauth.OAuthService;
+import com.github.scribejava.core.oauth.OAuth20ServiceImpl;
+import com.github.scribejava.core.oauth.OAuthService;
 
 public class RequestTest {
 

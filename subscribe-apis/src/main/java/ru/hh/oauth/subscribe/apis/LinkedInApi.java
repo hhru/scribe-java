@@ -1,11 +1,11 @@
-package ru.hh.oauth.subscribe.apis;
+package com.github.scribejava.apis;
 
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
-import ru.hh.oauth.subscribe.core.builder.api.DefaultApi10a;
-import ru.hh.oauth.subscribe.core.model.Token;
+import com.github.scribejava.core.builder.api.DefaultApi10a;
+import com.github.scribejava.core.model.Token;
 
 public class LinkedInApi extends DefaultApi10a {
 

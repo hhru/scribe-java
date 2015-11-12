@@ -1,8 +1,8 @@
-package ru.hh.oauth.subscribe.core.utils;
+package com.github.scribejava.core.utils;
 
 import java.util.Locale;
 import java.util.regex.Pattern;
-import ru.hh.oauth.subscribe.core.model.OAuthConstants;
+import com.github.scribejava.core.model.OAuthConstants;
 
 /**
  * Utils for checking preconditions and invariants

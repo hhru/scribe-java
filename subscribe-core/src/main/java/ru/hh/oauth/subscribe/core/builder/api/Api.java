@@ -1,7 +1,7 @@
-package ru.hh.oauth.subscribe.core.builder.api;
+package com.github.scribejava.core.builder.api;
 
-import ru.hh.oauth.subscribe.core.model.OAuthConfig;
-import ru.hh.oauth.subscribe.core.oauth.OAuthService;
+import com.github.scribejava.core.model.OAuthConfig;
+import com.github.scribejava.core.oauth.OAuthService;
 
 /**
  * Contains all the configuration needed to instantiate a valid {@link OAuthService}

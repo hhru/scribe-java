@@ -1,6 +1,6 @@
-package ru.hh.oauth.subscribe.apis.google;
+package com.github.scribejava.apis.google;
 
-import ru.hh.oauth.subscribe.core.model.Token;
+import com.github.scribejava.core.model.Token;
 
 public class GoogleToken extends Token {
 

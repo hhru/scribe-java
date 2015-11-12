@@ -1,13 +1,13 @@
-package ru.hh.oauth.subscribe.core.builder;
+package com.github.scribejava.core.builder;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
-import ru.hh.oauth.subscribe.core.builder.api.Api;
-import ru.hh.oauth.subscribe.core.model.OAuthConfig;
-import ru.hh.oauth.subscribe.core.model.OAuthConstants;
-import ru.hh.oauth.subscribe.core.model.SignatureType;
-import ru.hh.oauth.subscribe.core.oauth.OAuthService;
+import com.github.scribejava.core.builder.api.Api;
+import com.github.scribejava.core.model.OAuthConfig;
+import com.github.scribejava.core.model.OAuthConstants;
+import com.github.scribejava.core.model.SignatureType;
+import com.github.scribejava.core.oauth.OAuthService;
 
 public class ServiceBuilderTest {
 

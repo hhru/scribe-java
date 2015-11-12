@@ -1,6 +1,6 @@
-package ru.hh.oauth.subscribe.core.extractors;
+package com.github.scribejava.core.extractors;
 
-import ru.hh.oauth.subscribe.core.model.Token;
+import com.github.scribejava.core.model.Token;
 
 /**
  * Simple command object that extracts a {@link Token} from a String

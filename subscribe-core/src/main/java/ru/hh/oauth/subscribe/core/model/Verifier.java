@@ -1,6 +1,6 @@
-package ru.hh.oauth.subscribe.core.model;
+package com.github.scribejava.core.model;
 
-import ru.hh.oauth.subscribe.core.utils.Preconditions;
+import com.github.scribejava.core.utils.Preconditions;
 
 /**
  * Represents an OAuth verifier code.

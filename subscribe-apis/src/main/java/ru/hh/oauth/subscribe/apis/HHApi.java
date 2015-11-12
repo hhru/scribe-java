@@ -1,14 +1,14 @@
-package ru.hh.oauth.subscribe.apis;
+package com.github.scribejava.apis;
 
-import ru.hh.oauth.subscribe.core.builder.api.DefaultApi20;
-import ru.hh.oauth.subscribe.core.extractors.AccessTokenExtractor;
-import ru.hh.oauth.subscribe.core.extractors.JsonTokenExtractor;
-import ru.hh.oauth.subscribe.core.model.OAuthConfig;
-import ru.hh.oauth.subscribe.core.model.OAuthConstants;
-import ru.hh.oauth.subscribe.core.model.Verb;
-import ru.hh.oauth.subscribe.core.oauth.OAuthService;
+import com.github.scribejava.core.builder.api.DefaultApi20;
+import com.github.scribejava.core.extractors.AccessTokenExtractor;
+import com.github.scribejava.core.extractors.JsonTokenExtractor;
+import com.github.scribejava.core.model.OAuthConfig;
+import com.github.scribejava.core.model.OAuthConstants;
+import com.github.scribejava.core.model.Verb;
+import com.github.scribejava.core.oauth.OAuthService;
 
-import ru.hh.oauth.subscribe.apis.service.HHOAuthServiceImpl;
+import com.github.scribejava.apis.service.HHOAuthServiceImpl;
 
 public class HHApi extends DefaultApi20 {
 

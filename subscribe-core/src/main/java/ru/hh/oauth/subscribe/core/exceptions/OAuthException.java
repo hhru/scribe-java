@@ -1,4 +1,4 @@
-package ru.hh.oauth.subscribe.core.exceptions;
+package com.github.scribejava.core.exceptions;
 
 /**
  * Default SubScribe exception. Represents a problem in the OAuth signing process

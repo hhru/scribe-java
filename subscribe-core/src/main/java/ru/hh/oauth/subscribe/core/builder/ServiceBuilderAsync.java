@@ -1,9 +1,9 @@
-package ru.hh.oauth.subscribe.core.builder;
+package com.github.scribejava.core.builder;
 
 import com.ning.http.client.AsyncHttpClientConfig;
-import ru.hh.oauth.subscribe.core.model.OAuthConfigAsync;
-import ru.hh.oauth.subscribe.core.oauth.OAuthService;
-import ru.hh.oauth.subscribe.core.utils.Preconditions;
+import com.github.scribejava.core.model.OAuthConfigAsync;
+import com.github.scribejava.core.oauth.OAuthService;
+import com.github.scribejava.core.utils.Preconditions;
 
 public class ServiceBuilderAsync extends AbstractServiceBuilder<ServiceBuilderAsync> {
 

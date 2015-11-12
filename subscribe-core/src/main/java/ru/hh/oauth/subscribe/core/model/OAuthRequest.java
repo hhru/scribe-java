@@ -1,12 +1,12 @@
-package ru.hh.oauth.subscribe.core.model;
+package com.github.scribejava.core.model;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Map;
-import ru.hh.oauth.subscribe.core.exceptions.OAuthConnectionException;
-import ru.hh.oauth.subscribe.core.exceptions.OAuthException;
-import ru.hh.oauth.subscribe.core.oauth.OAuthService;
+import com.github.scribejava.core.exceptions.OAuthConnectionException;
+import com.github.scribejava.core.exceptions.OAuthException;
+import com.github.scribejava.core.oauth.OAuthService;
 
 public class OAuthRequest extends AbstractRequest {
 

@@ -1,7 +1,7 @@
-package ru.hh.oauth.subscribe.apis;
+package com.github.scribejava.apis;
 
-import ru.hh.oauth.subscribe.core.builder.api.DefaultApi10a;
-import ru.hh.oauth.subscribe.core.model.Token;
+import com.github.scribejava.core.builder.api.DefaultApi10a;
+import com.github.scribejava.core.model.Token;
 
 /**
  * OAuth access to the Meetup.com API. For more information visit http://www.meetup.com/api
